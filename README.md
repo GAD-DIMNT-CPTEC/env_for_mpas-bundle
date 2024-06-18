@@ -8,7 +8,7 @@ The step by step to build JEDI mpas-bundle (release 2.0.0) at CPTEC's EGEON clus
 
 This mpas-bundle release can be downloaded from JCSDA git repository ( https://github.com/JCSDA/mpas-bundle ) with the command:
 
-`git clone -b release/2.0.0 https://github.com/JCSDA/mpas-bundle.git code `
+`git clone -b release/2.0.0 https://github.com/JCSDA/mpas-bundle.git  mpas-bundle-rel2.0.0`
 
 ### Libraries needed : 
 
