@@ -102,6 +102,9 @@ export GMP_LIB=$GMP_DIR/lib
 export GMP_LIBRARIES=$GMP_LIB
 export GMP_INCLUDE_DIR=$GMP_INC
 
+## ecbuild will redirect URL downloads for coefficients and test-data to the local mirror (copy):
+export ECBUILD_DOWNLOAD_BASE_URL=file:///mnt/beegfs/jose.aravequia/mirror-mpas-bundle
+
 ecbuild $JEDI_SRC
 make -j4 
 
