@@ -79,7 +79,7 @@ module load python-3.9.15-gcc-9.4.0-f466wuv
 ### User can adjust the 3 lines below to its case
 export JEDI_ROOT=${HOME}/jedi
 export JEDI_SRC=${JEDI_ROOT}/mpas-bundle-dev   ## path to mpas-bundle release 2.0.0 was download from git
-export JEDI_BUILD=${JEDI_ROOT}/build_mpas-dev-gnu9-modules   ## path to build the JEDI mpas-bundle package
+export JEDI_BUILD=${JEDI_ROOT}/build-mpas-dev   ## path to build the JEDI mpas-bundle package
 
 mkdir -p $JEDI_BUILD
 cd $JEDI_BUILD
