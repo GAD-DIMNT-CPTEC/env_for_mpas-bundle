@@ -23,6 +23,13 @@ module use $JEDI_OPT/modulefiles/core
 module purge
 module load gnu9/9.4.0
 
+## To avoid problem in with ecbuild uses system compiler instead of the one assigned by the module: 
+ver_cc=`echo $JEDI_COMPILER | cut -d / -f 2`
+export CC=/opt/ohpc/pub/compiler/gcc/${ver_cc}/bin/gcc
+export CXX=/opt/ohpc/pub/compiler/gcc/${ver_cc}/bin/g++
+export FC=/opt/ohpc/pub/compiler/gcc/${ver_cc}/bin/gfortran
+export F77=/opt/ohpc/pub/compiler/gcc/${ver_cc}/bin/gfortran
+
 ## Load MPAS-JEDI compiler and MPI modules
 
 module load jedi-gnu9/9.4.0
